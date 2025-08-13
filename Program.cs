@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MstGrades.Logins;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace MstGrades
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmGrademanager());
+            Application.Run(new LoginForm());
         }
     }
 }

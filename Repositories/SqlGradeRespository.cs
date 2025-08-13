@@ -1,4 +1,5 @@
-﻿using MstGrades.Models;
+﻿using MstGrades.Logins;
+using MstGrades.Models;
 using MstGrades.Repositories;
 using System;
 using System.Collections.Generic;
@@ -37,7 +38,7 @@ namespace MstGrades.Repositories
             cmd.Parameters.AddWithValue("@GradeName", grade.GradeName);
             cmd.Parameters.AddWithValue("@Description", grade.Description);
             cmd.Parameters.AddWithValue("@ActiveStatus", grade.ActiveStatus);
-            cmd.Parameters.AddWithValue("@CreatedBy", Environment.UserName);
+            cmd.Parameters.AddWithValue("@CreatedBy", Session.CurrentUser);
             conn.Open();
             cmd.ExecuteNonQuery();
         }
