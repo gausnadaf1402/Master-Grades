@@ -28,9 +28,9 @@ namespace MstGrades.Repositories
             string connectionString = "Data Source=.\\sqlexpress;Initial Catalog=StudManagement;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
             string query = @"INSERT INTO dbo.MstGrades 
-                         (GradeName, Description, ActiveStatus,CreatedBy)
+                         (GradeName, Description, ActiveStatus,CreatedBy,ModifiedBy)
                          VALUES 
-                         (@GradeName, @Description, @ActiveStatus,@CreatedBy)";
+                         (@GradeName, @Description, @ActiveStatus,@CreatedBy,@ModifiedBy)";
 
             var conn = new SqlConnection(connectionString);
             var cmd = new SqlCommand(query, conn);
@@ -39,6 +39,7 @@ namespace MstGrades.Repositories
             cmd.Parameters.AddWithValue("@Description", grade.Description);
             cmd.Parameters.AddWithValue("@ActiveStatus", grade.ActiveStatus);
             cmd.Parameters.AddWithValue("@CreatedBy", Session.CurrentUser);
+            cmd.Parameters.AddWithValue("@ModifiedBy", DBNull.Value);
             conn.Open();
             cmd.ExecuteNonQuery();
         }
@@ -49,7 +50,8 @@ namespace MstGrades.Repositories
             string query = @"UPDATE dbo.MstGrades 
                          SET GradeName = @GradeName, 
                              Description = @Description, 
-                             ActiveStatus = @ActiveStatus
+                             ActiveStatus = @ActiveStatus,
+                             ModifiedBy = @ModifiedBy
                          WHERE GradeID = @GradeID";
             var conn = new SqlConnection(connectionString);
             var cmd = new SqlCommand(query, conn);
@@ -57,6 +59,7 @@ namespace MstGrades.Repositories
             cmd.Parameters.AddWithValue("@GradeName", grade.GradeName);
             cmd.Parameters.AddWithValue("@Description", grade.Description);
             cmd.Parameters.AddWithValue("@ActiveStatus", grade.ActiveStatus);
+            cmd.Parameters.AddWithValue("@ModifiedBy", Session.CurrentUser);
             conn.Open();
             cmd.ExecuteNonQuery();
         }

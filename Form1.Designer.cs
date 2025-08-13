@@ -29,16 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGrademanager));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainPanel = new CodeVendor.Controls.Grouper();
-            this.gvpanel = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblselectionwindow = new System.Windows.Forms.Label();
-            this.btnHide = new System.Windows.Forms.Button();
             this.checkboxactivestatus = new System.Windows.Forms.CheckBox();
             this.lblactivestatus = new System.Windows.Forms.Label();
             this.txtdescription = new System.Windows.Forms.TextBox();
@@ -48,20 +44,25 @@
             this.txtgradeid = new System.Windows.Forms.TextBox();
             this.lblgradeid = new System.Windows.Forms.Label();
             this.groupBox1 = new CodeVendor.Controls.Grouper();
+            this.buttonImagesImageList = new System.Windows.Forms.ImageList(this.components);
+            this.lblLoggedInUser = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
             this.btnexit = new System.Windows.Forms.Button();
             this.btnShow = new System.Windows.Forms.Button();
+            this.gvpanel = new System.Windows.Forms.Panel();
+            this.lblselect = new System.Windows.Forms.Label();
             this.cmbdvRight = new System.Windows.Forms.ComboBox();
             this.txtGridSearch = new System.Windows.Forms.TextBox();
             this.lblsearch = new System.Windows.Forms.Label();
-            this.lblselect = new System.Windows.Forms.Label();
-            this.buttonImagesImageList = new System.Windows.Forms.ImageList(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblselectionwindow = new System.Windows.Forms.Label();
+            this.btnHide = new System.Windows.Forms.Button();
             this.MainPanel.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.gvpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainPanel
@@ -94,98 +95,6 @@
             this.MainPanel.ShadowThickness = 4;
             this.MainPanel.Size = new System.Drawing.Size(1033, 341);
             this.MainPanel.TabIndex = 0;
-            // 
-            // gvpanel
-            // 
-            this.gvpanel.AutoScroll = true;
-            this.gvpanel.BackColor = System.Drawing.Color.DarkKhaki;
-            this.gvpanel.BackgroundImage = global::MstGrades.Properties.Resources.RighGride1;
-            this.gvpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gvpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.gvpanel.Controls.Add(this.lblselect);
-            this.gvpanel.Controls.Add(this.cmbdvRight);
-            this.gvpanel.Controls.Add(this.txtGridSearch);
-            this.gvpanel.Controls.Add(this.lblsearch);
-            this.gvpanel.Controls.Add(this.dataGridView1);
-            this.gvpanel.Controls.Add(this.lblselectionwindow);
-            this.gvpanel.Controls.Add(this.btnHide);
-            this.gvpanel.Location = new System.Drawing.Point(447, 11);
-            this.gvpanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.gvpanel.Name = "gvpanel";
-            this.gvpanel.Size = new System.Drawing.Size(586, 319);
-            this.gvpanel.TabIndex = 9;
-            // 
-            // dataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Wheat;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.BurlyWood;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.DarkGoldenrod;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 63);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(541, 207);
-            this.dataGridView1.TabIndex = 266;
-            // 
-            // lblselectionwindow
-            // 
-            this.lblselectionwindow.AutoSize = true;
-            this.lblselectionwindow.BackColor = System.Drawing.Color.Transparent;
-            this.lblselectionwindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblselectionwindow.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblselectionwindow.Location = new System.Drawing.Point(186, 35);
-            this.lblselectionwindow.Name = "lblselectionwindow";
-            this.lblselectionwindow.Size = new System.Drawing.Size(185, 25);
-            this.lblselectionwindow.TabIndex = 265;
-            this.lblselectionwindow.Text = "Selection Window";
-            // 
-            // btnHide
-            // 
-            this.btnHide.BackColor = System.Drawing.Color.FloralWhite;
-            this.btnHide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHide.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHide.ImageIndex = 4;
-            this.btnHide.ImageList = this.buttonImagesImageList;
-            this.btnHide.Location = new System.Drawing.Point(13, 277);
-            this.btnHide.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHide.Name = "btnHide";
-            this.btnHide.Size = new System.Drawing.Size(84, 28);
-            this.btnHide.TabIndex = 263;
-            this.btnHide.Text = "Hide";
-            this.btnHide.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHide.UseVisualStyleBackColor = false;
-            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
             // 
             // checkboxactivestatus
             // 
@@ -281,6 +190,28 @@
             this.groupBox1.Size = new System.Drawing.Size(1033, 63);
             this.groupBox1.TabIndex = 1;
             // 
+            // buttonImagesImageList
+            // 
+            this.buttonImagesImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("buttonImagesImageList.ImageStream")));
+            this.buttonImagesImageList.TransparentColor = System.Drawing.Color.Magenta;
+            this.buttonImagesImageList.Images.SetKeyName(0, "Add-icon.png");
+            this.buttonImagesImageList.Images.SetKeyName(1, "Edit-icon.png");
+            this.buttonImagesImageList.Images.SetKeyName(2, "delete.jpg");
+            this.buttonImagesImageList.Images.SetKeyName(3, "show_ico.jpg");
+            this.buttonImagesImageList.Images.SetKeyName(4, "hide-ico.png");
+            this.buttonImagesImageList.Images.SetKeyName(5, "show-icon.png");
+            this.buttonImagesImageList.Images.SetKeyName(6, "exit-ico.png");
+            // 
+            // lblLoggedInUser
+            // 
+            this.lblLoggedInUser.AutoSize = true;
+            this.lblLoggedInUser.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoggedInUser.Location = new System.Drawing.Point(23, 393);
+            this.lblLoggedInUser.Name = "lblLoggedInUser";
+            this.lblLoggedInUser.Size = new System.Drawing.Size(54, 19);
+            this.lblLoggedInUser.TabIndex = 10;
+            this.lblLoggedInUser.Text = "label1";
+            // 
             // btnDelete
             // 
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -357,6 +288,39 @@
             this.btnShow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
+            // gvpanel
+            // 
+            this.gvpanel.AutoScroll = true;
+            this.gvpanel.BackColor = System.Drawing.Color.DarkKhaki;
+            this.gvpanel.BackgroundImage = global::MstGrades.Properties.Resources.RighGride1;
+            this.gvpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gvpanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.gvpanel.Controls.Add(this.lblselect);
+            this.gvpanel.Controls.Add(this.cmbdvRight);
+            this.gvpanel.Controls.Add(this.txtGridSearch);
+            this.gvpanel.Controls.Add(this.lblsearch);
+            this.gvpanel.Controls.Add(this.dataGridView1);
+            this.gvpanel.Controls.Add(this.lblselectionwindow);
+            this.gvpanel.Controls.Add(this.btnHide);
+            this.gvpanel.Location = new System.Drawing.Point(447, 11);
+            this.gvpanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.gvpanel.Name = "gvpanel";
+            this.gvpanel.Size = new System.Drawing.Size(586, 319);
+            this.gvpanel.TabIndex = 9;
+            // 
+            // lblselect
+            // 
+            this.lblselect.AutoSize = true;
+            this.lblselect.BackColor = System.Drawing.Color.Transparent;
+            this.lblselect.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblselect.ForeColor = System.Drawing.Color.Blue;
+            this.lblselect.Location = new System.Drawing.Point(105, 281);
+            this.lblselect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblselect.Name = "lblselect";
+            this.lblselect.Size = new System.Drawing.Size(57, 19);
+            this.lblselect.TabIndex = 320;
+            this.lblselect.Text = "Select";
+            // 
             // cmbdvRight
             // 
             this.cmbdvRight.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -390,37 +354,85 @@
             this.lblsearch.TabIndex = 317;
             this.lblsearch.Text = "Search";
             // 
-            // lblselect
+            // dataGridView1
             // 
-            this.lblselect.AutoSize = true;
-            this.lblselect.BackColor = System.Drawing.Color.Transparent;
-            this.lblselect.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblselect.ForeColor = System.Drawing.Color.Blue;
-            this.lblselect.Location = new System.Drawing.Point(105, 281);
-            this.lblselect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblselect.Name = "lblselect";
-            this.lblselect.Size = new System.Drawing.Size(57, 19);
-            this.lblselect.TabIndex = 320;
-            this.lblselect.Text = "Select";
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Wheat;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.BurlyWood;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.DarkGoldenrod;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 63);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(541, 207);
+            this.dataGridView1.TabIndex = 266;
             // 
-            // buttonImagesImageList
+            // lblselectionwindow
             // 
-            this.buttonImagesImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("buttonImagesImageList.ImageStream")));
-            this.buttonImagesImageList.TransparentColor = System.Drawing.Color.Magenta;
-            this.buttonImagesImageList.Images.SetKeyName(0, "Add-icon.png");
-            this.buttonImagesImageList.Images.SetKeyName(1, "Edit-icon.png");
-            this.buttonImagesImageList.Images.SetKeyName(2, "delete.jpg");
-            this.buttonImagesImageList.Images.SetKeyName(3, "show_ico.jpg");
-            this.buttonImagesImageList.Images.SetKeyName(4, "hide-ico.png");
-            this.buttonImagesImageList.Images.SetKeyName(5, "show-icon.png");
-            this.buttonImagesImageList.Images.SetKeyName(6, "exit-ico.png");
+            this.lblselectionwindow.AutoSize = true;
+            this.lblselectionwindow.BackColor = System.Drawing.Color.Transparent;
+            this.lblselectionwindow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblselectionwindow.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblselectionwindow.Location = new System.Drawing.Point(186, 35);
+            this.lblselectionwindow.Name = "lblselectionwindow";
+            this.lblselectionwindow.Size = new System.Drawing.Size(185, 25);
+            this.lblselectionwindow.TabIndex = 265;
+            this.lblselectionwindow.Text = "Selection Window";
+            // 
+            // btnHide
+            // 
+            this.btnHide.BackColor = System.Drawing.Color.FloralWhite;
+            this.btnHide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHide.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHide.ImageIndex = 4;
+            this.btnHide.ImageList = this.buttonImagesImageList;
+            this.btnHide.Location = new System.Drawing.Point(13, 277);
+            this.btnHide.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHide.Name = "btnHide";
+            this.btnHide.Size = new System.Drawing.Size(84, 28);
+            this.btnHide.TabIndex = 263;
+            this.btnHide.Text = "Hide";
+            this.btnHide.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHide.UseVisualStyleBackColor = false;
+            this.btnHide.Click += new System.EventHandler(this.btnHide_Click);
             // 
             // FrmGrademanager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1047, 407);
+            this.ClientSize = new System.Drawing.Size(1047, 415);
+            this.Controls.Add(this.lblLoggedInUser);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.MainPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -432,11 +444,12 @@
             this.Load += new System.EventHandler(this.FrmTaskmanager_Load);
             this.MainPanel.ResumeLayout(false);
             this.MainPanel.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.gvpanel.ResumeLayout(false);
             this.gvpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -465,6 +478,7 @@
         private System.Windows.Forms.Label lblsearch;
         private System.Windows.Forms.Label lblselect;
         private System.Windows.Forms.ImageList buttonImagesImageList;
+        private System.Windows.Forms.Label lblLoggedInUser;
     }
 }
 

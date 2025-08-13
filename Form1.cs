@@ -1,4 +1,5 @@
-﻿using MstGrades.Models;
+﻿using MstGrades.Logins;
+using MstGrades.Models;
 using MstGrades.Repositories;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,7 @@ namespace MstGrades
             cmbdvRight.Items.Add("Description");
             cmbdvRight.SelectedIndex = 0; // Set default selected item
             txtGridSearch.TextChanged += txtGridSearch_TextChanged; // Handle text changed event for search functionality
+            lblLoggedInUser.Text = $"Logged in as: {Session.CurrentUser}"; // Display the logged-in user
         }
 
         private void btnShow_Click(object sender, EventArgs e)
